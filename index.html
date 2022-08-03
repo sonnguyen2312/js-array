@@ -1,28 +1,84 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Title</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  </head>
-  <body>
-     
-    <div class="contaier" style="margin-bottom: 500px;">
-      <h3>Array lý thuyết</h3>
-        <p id="hoTen" class="badge badge-danger"></p>
-        <div id="content-array">
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        </div>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <div class="container" style="margin-bottom: 500px;">
+    <h3>Array lý thuyết</h3>
+    <p id="hoTen" class="badge badge-danger"></p>
+    <div id="content-array">
+
     </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="./js/index.js"></script>
-  </body>
+    <hr />
+    <h3>DOM: Sử dụng tagname(Tên thẻ)</h3>
+    <section>1</section>
+    <section>2</section>
+    <section>3</section>
+    <hr />
+    <h3>DOM: Sử dụng classname(class của thẻ)</h3>
+    <article class="txt">1</article>
+    <header class="txt">2</header>
+    <footer class="txt">3</footer>
+    <p class="txt">4</p>
+    <hr />
+    <h3>DOM: Sử dụng name(name của thẻ)</h3>
+    <article name="text-demo">1</article>
+    <header name="text-demo">2</header>
+    <footer name="text-demo">3</footer>
+    <p name="text-demo">4</p>
+    <hr />
+    <h3>DOM: queryselector</h3>
+    <div class="demo-selector">
+      <p id="p-text" class="p-text">Hello Cybersoft</p>
+      <p id="p1-text" class="p-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, sequi earum odio quam magnam quidem illum, officiis repudiandae facere quas reiciendis pariatur velit harum nemo hic assumenda eos cumque alias!</p>
+      <button class="btn btn-success" id="btnSubmit">submit</button>
+    </div>
+    <hr />
+    <h3>DOM: querySelectorAll</h3>
+    <form class="card w-50" id="form">
+      <div class="card-header bg-dark text-white">Đăng nhập</div>
+      <div class="card-body">
+        <div class="form-group">
+          <p>Tài khoản</p>
+          <input class="form-control" id="taiKhoan">
+          <div class="form-group">
+            <p>Mật khẩu</p>
+            <input class="form-control" id="matKhau" type="password">
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-success" id="btnDangNhap">Đăng nhập</button>
+      </div>
+    </form>
+    <style>
+      #form input {
+        color: red;
+      }
+    </style>
+    
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="./js/index.js"></script>
+</body>
+
 </html>
